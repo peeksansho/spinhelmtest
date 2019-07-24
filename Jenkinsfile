@@ -14,7 +14,7 @@ pipeline {
             steps {
                 //
                 echo 'testing!'
-                sh "sleep 3000"
+                sh "sleep 1"
             }
         }
         stage('Deploy') { 
