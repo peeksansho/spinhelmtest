@@ -3,10 +3,25 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('Build') { 
             steps {
-                echo 'Hello world!'
-                sh "sleep 400"
+                // 
+                echo 'building!'
+                sh "sleep 1"
+            }
+        }
+        stage('Test') { 
+            steps {
+                //
+                echo 'testing!'
+                sh "sleep 1"
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                //
+                echo 'deploying!'
+                sh "sleep 1"
             }
         }
     }
